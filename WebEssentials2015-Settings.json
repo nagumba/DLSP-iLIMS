@@ -5,12 +5,14 @@
     "EnablePixelPushing": true,
     "ShowMenu": true
   },
+
   "CodeGen": {
     "AddTypeScriptReferencePath": true,
     "CamelCaseEnumerationValues": false,
     "CamelCasePropertyNames": true,
     "CamelCaseTypeNames": false
   },
+
   "Css": {
     "ShowBrowserTooltip": true,
     "ShowInitialInherit": false,
@@ -26,6 +28,7 @@
     "ShowLogoWatermark": true,
     "SvgPreviewPane": true
   },
+
   "Html": {
     "AttributeQuotesRemovalMode": "KeepQuotes",
     "CustomAngularDirectiveList": null,
@@ -37,6 +40,7 @@
     "MinifyKnockoutBindingExpressions": false,
     "ProcessableScriptTypeList": null
   },
+
   "JavaScript": {
     "BlockCommentCompletion": true,
     "EvalTreatment": "MakeImmediateSafe",
