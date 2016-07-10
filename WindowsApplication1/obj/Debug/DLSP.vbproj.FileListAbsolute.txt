@@ -1,0 +1,197 @@
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\references\iLab.designer.vb
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\references\iLab.dbml.layout
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\references\iLab.dbml
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\iLIMS.exe
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\iLIMS.pdb
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\iLIMS.xml
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\System.Net.Http.dll
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\DLSP.vbprojResolveAssemblyReference.cache
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.Aliquoting.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.BoxView.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmShipped.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmBatch.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmArchiving.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmSearch.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmShipping.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmResults.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmSamples.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmmanagepassword.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmRights.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmFreezers.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmADD_remove_tests.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmGroups.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmLocations.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmlogin.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.frmusers.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.mdiLIMS.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.Resources.resources
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\DLSP.vbproj.GenerateResource.Cache
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\iLIMS.exe
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\iLIMS.xml
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\iLIMS.pdb
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\iLIMS.exe.manifest
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\bin\Debug\iLIMS.application
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\iLIMS.exe.manifest
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\iLIMS.application
+D:\elab\eLab 2016.05.25.001\WindowsApplication1\obj\Debug\ilims.Form1.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.exe
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.xml
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.pdb
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\references\iLab.designer.vb
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\references\iLab.dbml.layout
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\references\iLab.dbml
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.manifest
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\DLSP.vbprojResolveAssemblyReference.cache
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.Aliquoting.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.BoxView.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.Form1.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmShipped.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmBatch.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmArchiving.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmSearch.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmShipping.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmResults.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmSamples.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmmanagepassword.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmRights.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmFreezers.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmADD_remove_tests.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmGroups.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmLocations.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmlogin.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmusers.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.mdiLIMS.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.Resources.resources
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\DLSP.vbproj.GenerateResource.Cache
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.exe.manifest
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.pdb
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.xml
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.CodeAnalysisLog.xml
+D:\VB Projects\elab\eLab 2016.06.19.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.lastcodeanalysissucceeded
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.Aliquoting.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.BoxView.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.Form1.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmShipped.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmBatch.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmArchiving.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmResultsQC.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmSearch2.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmShipping.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmResults.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmSamples.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmmanagepassword.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmRights.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmFreezers.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmADD_remove_tests.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmGroups.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmLocations.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmlogin.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.frmusers.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.mdiLIMS.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\ilims.Resources.resources
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\DLSP.vbproj.GenerateResource.Cache
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\references\iLab.designer.vb
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\references\iLab.dbml.layout
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\references\iLab.dbml
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.manifest
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.pdb
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.xml
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.CodeAnalysisLog.xml
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.lastcodeanalysissucceeded
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.exe.manifest
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.exe
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.xml
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.pdb
+D:\VB Projects\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\DLSP.vbprojResolveAssemblyReference.cache
+F:\PROJECT\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+F:\PROJECT\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.exe
+F:\PROJECT\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.xml
+F:\PROJECT\elab\eLab 2016.06.29.001\eLab 2016.06.19.001\WindowsApplication1\obj\Debug\iLIMS.pdb
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.exe
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.xml
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.pdb
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\references\iLab.designer.vb
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\references\iLab.dbml.layout
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\references\iLab.dbml
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.manifest
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.application
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.pdb
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.xml
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.CodeAnalysisLog.xml
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.lastcodeanalysissucceeded
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\System.Net.Http.dll
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\DLSP.vbprojResolveAssemblyReference.cache
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.Aliquoting.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.BoxView.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.Form1.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmShipped.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmBatch.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmArchiving.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmResultsQC.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmSearch2.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmShipping.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmResults.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmSamples.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmmanagepassword.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmRights.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmFreezers.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmADD_remove_tests.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmGroups.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmLocations.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmlogin.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmusers.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.mdiLIMS.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.Resources.resources
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\DLSP.vbproj.GenerateResource.Cache
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.exe.manifest
+F:\PROJECT\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\references\iLab.designer.vb
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\references\iLab.dbml.layout
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\references\iLab.dbml
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.manifest
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.pdb
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.xml
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.CodeAnalysisLog.xml
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe.lastcodeanalysissucceeded
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.BoxView.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmResultsQC.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmSearch2.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmShipping.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmResults.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmSamples.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmmanagepassword.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmRights.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmFreezers.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmADD_remove_tests.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmGroups.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmLocations.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmlogin.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmusers.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.mdiLIMS.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.Resources.resources
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\DLSP.vbproj.GenerateResource.Cache
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.exe.manifest
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.application
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.exe
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.xml
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\iLIMS.pdb
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\DLSP.vbprojResolveAssemblyReference.cache
+D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\obj\Debug\ilims.frmAliquoting.resources
+F:\PROJECT\elab\eLab 2016.07.10.001\WindowsApplication1\bin\Debug\iLIMS.exe.config
+F:\PROJECT\elab\eLab 2016.07.10.001\WindowsApplication1\obj\Debug\iLIMS.exe
+F:\PROJECT\elab\eLab 2016.07.10.001\WindowsApplication1\obj\Debug\iLIMS.xml
+F:\PROJECT\elab\eLab 2016.07.10.001\WindowsApplication1\obj\Debug\iLIMS.pdb

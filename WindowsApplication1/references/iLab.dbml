@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="eLab" Class="iLabDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\;Initial Catalog=eLab;Integrated Security=True" SettingsObjectName="ilims.My.MySettings" SettingsPropertyName="eLabConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Archivings" Member="Archivings">
+    <Type Name="Archiving">
+      <Column Name="LabRef" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UniqueID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FREEZER" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SHELF" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="RACK" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ROW" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[COLUMN]" Member="COLUMN" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Pos_Ref" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ArchiveState" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ArchiveDate" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Rec_Date" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Batch_Details" Member="Batch_Details">
+    <Type Name="Batch_Detail">
+      <Column Name="RecID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BatchID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BatchOrigin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SampleType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SampleCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Recdate" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="Batch_Detail_Labqueue_manager" Member="Labqueue_managers" ThisKey="BatchID" OtherKey="BatchID" Type="Labqueue_manager" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Labqueue_manager" Member="Labqueue_managers">
+    <Type Name="Labqueue_manager">
+      <Column Name="LabRef" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BatchID" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StudyID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Received" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SampleR" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="demographics" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Archived" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Aliqoted" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Rec_Date" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="officer" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Batch_Detail_Labqueue_manager" Member="Batch_Detail" ThisKey="BatchID" OtherKey="BatchID" Type="Batch_Detail" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Locations" Member="Locations">
+    <Type Name="Location">
+      <Column Name="REC_ID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Facility" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Rec_Date" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rights" Member="rights">
+    <Type Name="right">
+      <Column Name="accessID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="groupID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="modID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="access" Type="System.String" DbType="VarChar(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="officer" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="right_user" Member="users" ThisKey="groupID" OtherKey="groupID" Type="user" />
+    </Type>
+  </Table>
+  <Table Name="dbo.users" Member="users">
+    <Type Name="user">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="groupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="onames" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="logged" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="officer" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Association Name="right_user" Member="right" ThisKey="groupID" OtherKey="groupID" Type="right" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sample_Results" Member="Sample_Results">
+    <Type Name="Sample_Result">
+      <Column Name="ResultRef" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="REC_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UniqueID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Aliqots" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Test" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Subtest" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="TestResult" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TestedBy" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="QCby" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Rec_Date" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ODValue" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sample_logs" Member="Sample_logs">
+    <Type Name="Sample_log">
+      <Column Name="RecID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UniqueID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Aliqots" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BatchID" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Demographics" Member="Demographics">
+    <Type Name="Demographic">
+      <Column Name="Rec_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MName" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Lname" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Age" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LabRef" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Rec_Date" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Archivings" Member="Archiving1s">
+    <Type Name="Archiving1">
+      <Column Name="LabRef" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UniqueID" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="BOXID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pos_Ref" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ArchiveState" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ArchiveDate" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Rec_Date" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="settings.manageUsers" Method="manageUsers">
+    <Parameter Name="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="groupID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="onames" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="code" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="username" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="logged" Type="System.Int32" DbType="Int" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="status" Type="System.String" DbType="VarChar(3)" />
+    <Parameter Name="officer" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="settings.JobQueueupdateManager" Method="JobQueueupdateManager" IsComposable="true">
+    <Parameter Name="Visit_ID" Parameter="visit_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tblFld" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="settings.GetUsers" Method="GetUsers">
+    <ElementType Name="GetUsersResult">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="groupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="onames" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="logged" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="officer" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="settings.DeletePatientRecord" Method="DeletePatientRecord" IsComposable="true">
+    <Parameter Name="Visit_ID" Parameter="visit_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tblFld" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="schema" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.manage_archives" Method="manage_archives">
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="BoxID" Parameter="boxID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Pos_Ref" Parameter="pos_Ref" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ArchiveState" Parameter="archiveState" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="ArchiveDate" Parameter="archiveDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_Freezers" Method="manage_Freezers">
+    <Parameter Name="FR_No" Parameter="fR_No" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FR_Location" Parameter="fR_Location" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="FR_Name" Parameter="fR_Name" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="FR_InstallDate" Parameter="fR_InstallDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="FR_Shelves" Parameter="fR_Shelves" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FR_Racks" Parameter="fR_Racks" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FR_Desc" Parameter="fR_Desc" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_Locations" Method="manage_Locations" IsComposable="true">
+    <Parameter Name="Country" Parameter="country" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="County" Parameter="county" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="LocationID" Parameter="locationID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Facility" Parameter="facility" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(40)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.manage_Specimen" Method="manage_Specimen">
+    <Parameter Name="SpecimenID" Parameter="specimenID" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="location" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="sample_type" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="sample_group" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="coll_date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="receive_date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="entry_date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_Demographics" Method="manage_Demographics">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="MName" Parameter="mName" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Age" Parameter="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="NVarChar(6)" />
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Proc_select_Results" Method="Proc_select_Results">
+    <ElementType Name="Proc_select_ResultsResult">
+      <Column Name="ResultRef" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="REC_ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Barcode" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="UniqueID" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Aliqots" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Test" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Subtest" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="TestResult" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TestedBy" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="QCby" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="QCdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Officer" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Rec_Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Measure" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.manage_testing" Method="manage_testing">
+    <Parameter Name="TestDate" Parameter="testDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="testStatus" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="TestDone" Parameter="testDone" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="NotestReason" Parameter="notestReason" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="TestOutCome" Parameter="testOutCome" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_OD_CTvalues" Method="manage_OD_CTvalues">
+    <Parameter Name="Lab_Ref" Parameter="lab_Ref" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="OD_CT" Parameter="oD_CT" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="OD_CT_Value" Parameter="oD_CT_Value" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Mean" Parameter="mean" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Cut_off" Parameter="cut_off" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NChar(10)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_Sample_Results" Method="manage_Sample_Results">
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Test" Parameter="test" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Kit" Parameter="kit" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="Target" Parameter="target" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="Result" Parameter="result" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="QC_Officer" Parameter="qC_Officer" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="QCdate" Parameter="qCdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Measure" Parameter="measure" Type="System.Double" DbType="Float" />
+    <Parameter Name="status" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_aliquots" Method="manage_aliquots">
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="BoxID" Parameter="boxID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Pos_Ref" Parameter="pos_Ref" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AliquotState" Parameter="aliquotState" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="AliquotVol" Parameter="aliquotVol" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_Shipping" Method="manage_Shipping">
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Source" Parameter="source" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Destination" Parameter="destination" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="SendDate" Parameter="sendDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="ReceiveDate" Parameter="receiveDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Addressee" Parameter="addressee" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Receive_officer" Parameter="receive_officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Send_officer" Parameter="send_officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="_return" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="_returnED" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

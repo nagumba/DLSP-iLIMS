@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 12.25" name="DataClasses1">
+  <DataContextMoniker Name="/iLabDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2a96b58d-c972-4713-86fb-08a2f5a046d8" absoluteBounds="6.75, 0.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/iLabDataContext/Archiving" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f015b19-87eb-4b61-b578-5cd0b46be21e" absoluteBounds="6.7650000000000006, 1.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4b7a387-362c-452d-ace8-70bcddd67131" absoluteBounds="0.75, 6.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/iLabDataContext/Batch_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed691494-515d-4d9d-9ef7-24a7900ae6d6" absoluteBounds="0.76500000059604645, 6.96000000089407, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f00ac5bd-6f94-4799-ad53-35d44ae70c80" absoluteBounds="3.5, 6, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/iLabDataContext/Labqueue_manager" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fd13daa-69d4-4b51-8845-e224001f2543" absoluteBounds="3.5150000005960464, 6.46000000089407, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0b1e3b5-4776-40ff-ba80-52af73eaf955" absoluteBounds="6.75, 5.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/iLabDataContext/Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="beb6f5c8-f2f4-4f6c-acb5-57cc47d0adc6" absoluteBounds="6.7650000000000006, 6.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7eec54b8-127e-487c-8b59-1b1bb876229d" absoluteBounds="0.75, 1.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/iLabDataContext/right" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8462c90b-f173-4da4-b1f4-8ec5a37d4f57" absoluteBounds="0.76500000059604645, 1.9600000008940697, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f74762b-6d9d-43f0-8f25-fc2df832e938" absoluteBounds="3.5, 1, 2, 3.1170068359375009">
+      <DataClassMoniker Name="/iLabDataContext/user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f224468b-5c06-478f-ad1c-ce4392a3c74d" absoluteBounds="3.5150000005960464, 1.4600000008940697, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.56655110677083); (3.5 : 3.56655110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/iLabDataContext/right/right_user" />
+      <nodes>
+        <classShapeMoniker Id="7eec54b8-127e-487c-8b59-1b1bb876229d" />
+        <classShapeMoniker Id="2f74762b-6d9d-43f0-8f25-fc2df832e938" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.57774983723958); (3.5 : 7.57774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/iLabDataContext/Batch_Detail/Batch_Detail_Labqueue_manager" />
+      <nodes>
+        <classShapeMoniker Id="d4b7a387-362c-452d-ace8-70bcddd67131" />
+        <classShapeMoniker Id="f00ac5bd-6f94-4799-ad53-35d44ae70c80" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="240884b2-4b4c-4324-a195-0afbc90b1373" absoluteBounds="6.75, 8.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/iLabDataContext/Sample_Result" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bf3688cf-487b-4d6b-808a-c957186ec7dd" absoluteBounds="6.7650000000000006, 9.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb0152f3-e70b-4bde-887d-2c6c9352fd4a" absoluteBounds="9.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/iLabDataContext/Sample_log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b77874e9-908f-4d3e-a10b-ae84d1a739f9" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="410876ed-b8b6-4ad9-9d78-961adbf6eb34" absoluteBounds="9.75, 3.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/iLabDataContext/Demographic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71232a00-6f29-4fac-8420-3d1a80aa696d" absoluteBounds="9.765, 4.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efa04c14-c17b-45fe-9d93-6fa45e9bd4ed" absoluteBounds="1.125, 0.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/iLabDataContext/Archiving1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc76990d-5e50-4d90-a1d0-d62dc48111ac" absoluteBounds="1.1400000000000001, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
