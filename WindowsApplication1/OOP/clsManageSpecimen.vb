@@ -22,7 +22,7 @@ Public Class clsManageSpecimen
         frm.cb_gender.DataSource = Nothing
         frm.chk_Demo.CheckState = Nothing
         ' frm.lst_Study.DataSource = Nothing
-        frm.cb_freezer.DataSource = Nothing
+        ' frm.cb_freezer.DataSource = Nothing
 
         loadCombo(frm.cb_Location, sql1, "Location", "facility")
         loadCombo(frm.cb_SampleType, sql2, "sampleTypes", "sampletype")
@@ -78,8 +78,8 @@ Public Class clsManageSpecimen
                 frm.cb_Group.Text = rDR.Item("sampleGroup")
                 frm.dtpReceiveDate.Text = rDR.Item("receive_date")
                 frm.dtpColldate.Value = rDR.Item("coll_date")
-                frm.lblSampleType.Text = rDR.Item("SampleType")
-                frm.lblGroup.Text = rDR.Item("sampleGroup")
+                'frm.lblSampleType.Text = rDR.Item("SampleType")
+                'frm.lblGroup.Text = rDR.Item("sampleGroup")
                 frm.cb_Location.Text = rDR.Item("Location")
 
             End While

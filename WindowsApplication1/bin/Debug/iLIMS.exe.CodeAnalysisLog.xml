@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
 <FxCopReport Version="14.0">
  <Targets>
-  <Target Name="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\bin\Debug\iLIMS.exe">
+  <Target Name="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\bin\Debug\iLIMS.exe">
    <Modules>
     <Module Name="ilims.exe">
      <Namespaces>
@@ -12,8 +12,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI" File="BoxView.Designer.vb" Line="7">'BoxView' contains field 'BoxView.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'BoxView' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI" File="BoxView.Designer.vb" Line="7">'BoxView' contains field 'BoxView.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'BoxView' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -21,141 +21,141 @@
         </Type>
         <Type Name="clsCommonMethods" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
            <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'clsCommonMethods' because it creates members of the following IDisposable types: 'iLabDataContext'. If 'clsCommonMethods' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#GenericPatientListViewLoad(System.Windows.Forms.ListView,System.String&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="196">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GenericPatientListViewLoad(ListView, ByRef String)' could contain the following variables 'Me.setMyQuery'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="196">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GenericPatientListViewLoad(ListView, ByRef String)' could contain the following variables 'Me.setMyQuery'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetDiagnosisPatientLaboratoryNurseQueue(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="933">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDiagnosisPatientLaboratoryNurseQueue(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="933">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDiagnosisPatientLaboratoryNurseQueue(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetDiagnosisPatientLaboratoryQueue(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="880">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDiagnosisPatientLaboratoryQueue(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="880">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDiagnosisPatientLaboratoryQueue(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetDiagnosisPatientQueue(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="828">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDiagnosisPatientQueue(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="828">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDiagnosisPatientQueue(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetDoctorsLabResultsQueue(System.Windows.Forms.ListView,System.DateTime,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="613">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDoctorsLabResultsQueue(ListView, Date, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="613">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDoctorsLabResultsQueue(ListView, Date, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetDoctorSpecificXrayQueue(System.Windows.Forms.ListView,System.DateTime,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="667">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDoctorSpecificXrayQueue(ListView, Date, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="667">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDoctorSpecificXrayQueue(ListView, Date, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetDoctorsWorkLoadQueue(System.Windows.Forms.ListView,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="722">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDoctorsWorkLoadQueue(ListView, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="722">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetDoctorsWorkLoadQueue(ListView, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetGenericPatientQueueUsingQueryMode(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="775">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetGenericPatientQueueUsingQueryMode(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="775">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetGenericPatientQueueUsingQueryMode(ListView, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetMyCounts(System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1339">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetMyCounts(String, String, String, String)' could contain the following variables 'schm', 'tbl', 'clmn', 'cond', 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1339">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetMyCounts(String, String, String, String)' could contain the following variables 'schm', 'tbl', 'clmn', 'cond', 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetMyCountsWorkLoadSchedule(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1312">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetMyCountsWorkLoadSchedule(String, String)' could contain the following variables 'Conversions.ToString(Local8.Date)', 'eLABModulle.Cuser', 'Conversions.ToString(Date.Today)', 'eLABModulle.Cuser', 'Conversions.ToString(Date.Today)', 'eLABModulle.Cuser', 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1312">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetMyCountsWorkLoadSchedule(String, String)' could contain the following variables 'Conversions.ToString(Local8.Date)', 'eLABModulle.Cuser', 'Conversions.ToString(Date.Today)', 'eLABModulle.Cuser', 'Conversions.ToString(Date.Today)', 'eLABModulle.Cuser', 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetMyDataTableValues(System.String,System.String,System.String,System.Windows.Forms.CheckedListBox,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1226">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'clsCommonMethods.GetMyDataTableValues(String, String, String, CheckedListBox, Integer)' could contain the following variables 'Me.GetMyColumnValue', 'Me.GetMySchema', 'Me.GetMyTable', 'New String(8)(7)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1226">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'clsCommonMethods.GetMyDataTableValues(String, String, String, CheckedListBox, Integer)' could contain the following variables 'Me.GetMyColumnValue', 'Me.GetMySchema', 'Me.GetMyTable', 'New String(8)(7)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetMyTreeViewCounts()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1364">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetMyTreeViewCounts()' could contain the following variables 'Me.objSQLLibrary.GetPatientLoadQuerySpecificToDoctorCommon("examination", "examination", "riskfactors", "NO", "YES")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1364">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetMyTreeViewCounts()' could contain the following variables 'Me.objSQLLibrary.GetPatientLoadQuerySpecificToDoctorCommon("examination", "examination", "riskfactors", "NO", "YES")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetPatientsInQueuetoListView(System.Windows.Forms.ListView,System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="252">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListView(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="252">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListView(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetPatientsInQueuetoListViewChildExam(System.Windows.Forms.ListView,System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="405">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewChildExam(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="405">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewChildExam(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetPatientsInQueuetoListViewDoctorSpecific(System.Windows.Forms.ListView,System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="457">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewDoctorSpecific(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="457">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewDoctorSpecific(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetPatientsInQueuetoListViewDoctorSpecificPool(System.Windows.Forms.ListView,System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="509">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewDoctorSpecificPool(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="509">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewDoctorSpecificPool(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetPatientsInQueuetoListViewQueueTables(System.Windows.Forms.ListView,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="561">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewQueueTables(ListView, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="561">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueuetoListViewQueueTables(ListView, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetPatientsInQueueXraySampleandLab(System.Windows.Forms.ListView,System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="305">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueueXraySampleandLab(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="305">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'clsCommonMethods.GetPatientsInQueueXraySampleandLab(ListView, String, String, String, String)' could contain the following variables 'Me.sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#updateMyTableRecords(System.String,System.String,System.String,System.String,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1078">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'clsCommonMethods.updateMyTableRecords(String, String, String, String, Integer)' could contain the following variables 'myschema', 'mytbl', 'myclmn', 'myvalue', 'New String(10)(9)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsCommon.vb" Line="1078">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'clsCommonMethods.updateMyTableRecords(String, String, String, String, Integer)' could contain the following variables 'myschema', 'mytbl', 'myclmn', 'myvalue', 'New String(10)(9)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -163,36 +163,36 @@
         </Type>
         <Type Name="clsManageArchives" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
            <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'clsManageArchives' because it creates members of the following IDisposable types: 'iLabDataContext'. If 'clsManageArchives' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#fillbox(System.String,ilims.frmAliquoting)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="54">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.fillbox(String, frmAliquoting)' could contain the following variables 'frm.cb_rack.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="54">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.fillbox(String, frmAliquoting)' could contain the following variables 'frm.cb_rack.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#FillRack(System.String,ilims.frmAliquoting)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="38">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.FillRack(String, frmAliquoting)' could contain the following variables 'frm.cb_shelf.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="38">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.FillRack(String, frmAliquoting)' could contain the following variables 'frm.cb_shelf.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Fillrr(ilims.frmAliquoting)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="72">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.Fillrr(frmAliquoting)' could contain the following variables 'frm.cb_shelf.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="72">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.Fillrr(frmAliquoting)' could contain the following variables 'frm.cb_shelf.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Fillshelf(System.Int32,ilims.frmAliquoting)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="9">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.Fillshelf(Integer, frmAliquoting)' could contain the following variables 'frm.cb_freezer.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageArchives.vb" Line="9">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageArchives.Fillshelf(Integer, frmAliquoting)' could contain the following variables 'frm.cb_freezer.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -200,29 +200,29 @@
         </Type>
         <Type Name="clsManageResults" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
            <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'clsManageResults' because it creates members of the following IDisposable types: 'iLabDataContext', 'frmSamples'. If 'clsManageResults' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#FillCultureResult(System.String,ilims.frmResults)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageResults.vb" Line="42">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageResults.FillCultureResult(String, frmResults)' could contain the following variables 'frm.cb_iTest.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageResults.vb" Line="42">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageResults.FillCultureResult(String, frmResults)' could contain the following variables 'frm.cb_iTest.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Filltest(System.String,ilims.frmResults)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageResults.vb" Line="101">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageResults.Filltest(String, frmResults)' could contain the following variables 'frm.cb_iTest.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageResults.vb" Line="101">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageResults.Filltest(String, frmResults)' could contain the following variables 'frm.cb_iTest.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Filltestresult1(System.String,ilims.frmResults)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageResults.vb" Line="120">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageResults.Filltestresult1(String, frmResults)' could contain the following variables 'frm.cb_iTest.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageResults.vb" Line="120">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'clsManageResults.Filltestresult1(String, frmResults)' could contain the following variables 'frm.cb_iTest.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -230,22 +230,22 @@
         </Type>
         <Type Name="clsManageSearch" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
            <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'clsManageSearch' because it creates members of the following IDisposable types: 'iLabDataContext'. If 'clsManageSearch' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="clsManageSpecimen" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
            <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'clsManageSpecimen' because it creates members of the following IDisposable types: 'iLabDataContext'. If 'clsManageSpecimen' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#getData(ilims.frmSamples)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="clsManageSpecimen.vb" Line="70">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'clsManageSpecimen.getData(frmSamples)' could contain the following variables 'eLABModulle.sLabref'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="clsManageSpecimen.vb" Line="70">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'clsManageSpecimen.getData(frmSamples)' could contain the following variables 'eLABModulle.sLabref'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -253,21 +253,21 @@
         </Type>
         <Type Name="clsManageUsers" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
            <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'clsManageUsers' because it creates members of the following IDisposable types: 'iLabDataContext'. If 'clsManageUsers' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="eLabDataSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
            <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'eLabDataSet'.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="eLabDataSet+FreezersDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
            <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'eLabDataSet.FreezersDataTable'.</Issue>
           </Message>
          </Messages>
@@ -276,165 +276,165 @@
          <Members>
           <Member Name="#Auth_User_login(System.String,System.String,System.Data.SqlClient.SqlConnection)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="387">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Auth_User_login(String, String, SqlConnection)' could contain the following variables 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="361">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Auth_User_login(String, String, SqlConnection)' could contain the following variables 'usr', 'pwd'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="387">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Auth_User_login(String, String, SqlConnection)' could contain the following variables 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="361">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Auth_User_login(String, String, SqlConnection)' could contain the following variables 'usr', 'pwd'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#checkQueuedPatient(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="1205">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.checkQueuedPatient(String)' could contain the following variables 'dssID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="1205">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.checkQueuedPatient(String)' could contain the following variables 'dssID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#checkStatus(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="547">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.checkStatus(String)' could contain the following variables 'ID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="547">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.checkStatus(String)' could contain the following variables 'ID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#deleteRecord(System.String,System.Data.SqlClient.SqlConnection)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="508">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.deleteRecord(String, SqlConnection)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="508">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.deleteRecord(String, SqlConnection)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#FillMyGrid(System.Windows.Forms.DataGridView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="85">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.FillMyGrid(DataGridView, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="85">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.FillMyGrid(DataGridView, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Get_Birth_Date(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="859">Object 'Ddr' can be disposed more than once in method 'eLABModulle.Get_Birth_Date(String)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 859</Issue>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="859">Object 'Ddr' can be disposed more than once in method 'eLABModulle.Get_Birth_Date(String)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 859</Issue>
             </Message>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="841">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Get_Birth_Date(String)' could contain the following variables '"SELECT BIRTH_DATE FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; permID &amp; "'"', '"SELECT DOB FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; permID &amp; "'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="841">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Get_Birth_Date(String)' could contain the following variables '"SELECT BIRTH_DATE FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; permID &amp; "'"', '"SELECT DOB FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; permID &amp; "'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Get_Birth_DateKibera(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="895">Object 'Ddr' can be disposed more than once in method 'eLABModulle.Get_Birth_DateKibera(String)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 895</Issue>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="895">Object 'Ddr' can be disposed more than once in method 'eLABModulle.Get_Birth_DateKibera(String)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 895</Issue>
             </Message>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="883">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Get_Birth_DateKibera(String)' could contain the following variables '"SELECT DOB FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; permID &amp; "'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="883">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.Get_Birth_DateKibera(String)' could contain the following variables '"SELECT DOB FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; permID &amp; "'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#getGroup(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="338">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.getGroup(Integer)' could contain the following variables 'Conversions.ToString(id)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="338">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.getGroup(Integer)' could contain the following variables 'Conversions.ToString(id)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadCombo(System.Windows.Forms.ComboBox,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="180">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadCombo(ComboBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="181">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.loadCombo(ComboBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="180">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadCombo(ComboBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="181">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.loadCombo(ComboBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadComboDefault(System.Windows.Forms.ComboBox,System.String,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="241">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadComboDefault(ComboBox, String, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="242">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.loadComboDefault(ComboBox, String, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="241">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadComboDefault(ComboBox, String, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="242">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.loadComboDefault(ComboBox, String, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadDemograghy(System.String,System.Windows.Forms.TextBox,System.Windows.Forms.TextBox,System.Windows.Forms.TextBox,System.Windows.Forms.TextBox,System.Windows.Forms.TextBox,System.Windows.Forms.TextBox)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="266">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadDemograghy(String, TextBox, TextBox, TextBox, TextBox, TextBox, TextBox)' could contain the following variables '"SELECT * FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; dssid &amp; "'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="266">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadDemograghy(String, TextBox, TextBox, TextBox, TextBox, TextBox, TextBox)' could contain the following variables '"SELECT * FROM " &amp; iLabDatabaseModule.tableIndividual &amp; " WHERE  " &amp; iLabDatabaseModule.INDIVIDID &amp; "='" &amp; dssid &amp; "'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadDoctor(System.Windows.Forms.TextBox,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="456">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadDoctor(TextBox, String, String)' could contain the following variables 'tbnm', 'id'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="456">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadDoctor(TextBox, String, String)' could contain the following variables 'tbnm', 'id'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadDoctorYES(System.Windows.Forms.TextBox,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="481">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadDoctorYES(TextBox, String, String, String)' could contain the following variables 'tbnm', 'status', 'id'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="481">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadDoctorYES(TextBox, String, String, String)' could contain the following variables 'tbnm', 'status', 'id'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadGroup(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="408">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadGroup(String)' could contain the following variables 'eLABModulle.Ccode'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="408">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadGroup(String)' could contain the following variables 'eLABModulle.Ccode'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadListBox(System.Windows.Forms.CheckedListBox,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="213">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadListBox(CheckedListBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="214">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.loadListBox(CheckedListBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="213">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.loadListBox(CheckedListBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="214">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.loadListBox(CheckedListBox, String, String, String)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#lst_Pop_queue_View(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="573">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lst_Pop_queue_View(ListView, String)' could contain the following variables 'iLabDatabaseModule.INDIVIDID', 'dssID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="573">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lst_Pop_queue_View(ListView, String)' could contain the following variables 'iLabDatabaseModule.INDIVIDID', 'dssID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#lst_view_compounds(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="915">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lst_view_compounds(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="915">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lst_view_compounds(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#lst_view_queue(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="619">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lst_view_queue(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="619">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lst_view_queue(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#lstVewNonSurvePatientData(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="739">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lstVewNonSurvePatientData(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="739">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lstVewNonSurvePatientData(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#lstVewWorkLoadshdule(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="684">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lstVewWorkLoadshdule(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="684">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'eLABModulle.lstVewWorkLoadshdule(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#LstView(System.Windows.Forms.ListView,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="111">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.LstView(ListView, String, String)' could contain the following variables 'Qsql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="111">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.LstView(ListView, String, String)' could contain the following variables 'Qsql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#userLogout()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="430">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.userLogout()' could contain the following variables 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\OOP" File="eLABModulle.vb" Line="430">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'eLABModulle.userLogout()' could contain the following variables 'eLABModulle.Cuser'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -444,8 +444,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI" File="frmAliquoting.Designer.vb" Line="7">'frmAliquoting' contains field 'frmAliquoting.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmAliquoting' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI" File="frmAliquoting.Designer.vb" Line="7">'frmAliquoting' contains field 'frmAliquoting.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmAliquoting' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -455,8 +455,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmFreezers.Designer.vb" Line="7">'frmFreezers' contains field 'frmFreezers.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmFreezers' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmFreezers.Designer.vb" Line="7">'frmFreezers' contains field 'frmFreezers.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmFreezers' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -466,15 +466,15 @@
          <Members>
           <Member Name="#cmdsave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmgroups.vb" Line="47">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'frmGroups.cmdsave_Click(Object, EventArgs)' could contain the following variables 'Operators.AddObject(Operators.AddObject("UPDATE [PCS].[settings].[groups] SET [group]=@group,description=@description WH...", Me.dtggroups.CurrentRow.Cells("group").FormattedValue), "'")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmgroups.vb" Line="47">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'frmGroups.cmdsave_Click(Object, EventArgs)' could contain the following variables 'Operators.AddObject(Operators.AddObject("UPDATE [PCS].[settings].[groups] SET [group]=@group,description=@description WH...", Me.dtggroups.CurrentRow.Cells("group").FormattedValue), "'")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#dtggroups_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmgroups.vb" Line="124">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'frmGroups.dtggroups_Click(Object, EventArgs)' could contain the following variables 'Operators.AddObject(Operators.AddObject("SELECT * FROM [PCS].[settings].[groups] WHERE [group]='", Me.dtggroups.CurrentRow.Cells("group").FormattedValue), "'")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmgroups.vb" Line="124">The query string passed to 'SqlCommand.CommandText.Set(String)' in 'frmGroups.dtggroups_Click(Object, EventArgs)' could contain the following variables 'Operators.AddObject(Operators.AddObject("SELECT * FROM [PCS].[settings].[groups] WHERE [group]='", Me.dtggroups.CurrentRow.Cells("group").FormattedValue), "'")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -484,8 +484,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmLocations.Designer.vb" Line="7">'frmLocations' contains field 'frmLocations.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmLocations' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmLocations.Designer.vb" Line="7">'frmLocations' contains field 'frmLocations.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmLocations' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -495,8 +495,8 @@
          <Members>
           <Member Name="#cmdsave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmmanagepassword.vb" Line="50">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmmanagepassword.cmdsave_Click(Object, EventArgs)' could contain the following variables 'eLABModulle.encrypt(pwd)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmmanagepassword.vb" Line="50">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmmanagepassword.cmdsave_Click(Object, EventArgs)' could contain the following variables 'eLABModulle.encrypt(pwd)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -506,8 +506,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI" File="frmResults.Designer.vb" Line="7">'frmResults' contains field 'frmResults.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmResults' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI" File="frmResults.Designer.vb" Line="7">'frmResults' contains field 'frmResults.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmResults' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -517,8 +517,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI" File="frmResultsQC.Designer.vb" Line="7">'frmResultsQC' contains field 'frmResultsQC.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmResultsQC' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI" File="frmResultsQC.Designer.vb" Line="7">'frmResultsQC' contains field 'frmResultsQC.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmResultsQC' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -528,8 +528,8 @@
          <Members>
           <Member Name="#cbomod_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmRights.vb" Line="109">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmRights.cbomod_Click(Object, EventArgs)' could contain the following variables '"SELECT * FROM dbo.rights WHERE groupID='" &amp; Me.grp.SelectedValue &amp; "' AND modID='" &amp; Me.cbomod.SelectedValue &amp; "' AND status='YES'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmRights.vb" Line="109">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmRights.cbomod_Click(Object, EventArgs)' could contain the following variables '"SELECT * FROM dbo.rights WHERE groupID='" &amp; Me.grp.SelectedValue &amp; "' AND modID='" &amp; Me.cbomod.SelectedValue &amp; "' AND status='YES'"'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -539,8 +539,19 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI" File="frmSamples.Designer.vb" Line="7">'frmSamples' contains field 'frmSamples.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmSamples' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI" File="frmSamples.Designer.vb" Line="7">'frmSamples' contains field 'frmSamples.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmSamples' to call Dispose or Close on this field.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmSearch2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI" File="frmSearch2.Designer.vb" Line="7">'frmSearch2' contains field 'frmSearch2.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'frmSearch2' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -550,15 +561,15 @@
          <Members>
           <Member Name="#lst_view_users()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmUsers.vb" Line="80">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmusers.lst_view_users()' could contain the following variables 'Conversions.ToString(Conversion.Val(Me.lst_users.SelectedItems(0).Text))'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmUsers.vb" Line="80">The query string passed to 'SqlCommand.New(String, SqlConnection)' in 'frmusers.lst_view_users()' could contain the following variables 'Conversions.ToString(Conversion.Val(Me.lst_users.SelectedItems(0).Text))'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#lstSystemusers(System.Windows.Forms.ListView,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1\GUI\Settings" File="frmUsers.vb" Line="151">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'frmusers.lstSystemusers(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1\GUI\Settings" File="frmUsers.vb" Line="151">The query string passed to 'SqlDataAdapter.New(String, SqlConnection)' in 'frmusers.lstSystemusers(ListView, String)' could contain the following variables 'query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -568,8 +579,8 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-09 13:12:46Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning" Path="D:\VB Projects\elab\eLab 2016.07.07.001\WindowsApplication1" File="mdiLIMS.Designer.vb" Line="7">'mdiLIMS' contains field 'mdiLIMS.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'mdiLIMS' to call Dispose or Close on this field.</Issue>
+            <Message Id="db" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2016-07-12 19:12:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="F:\PROJECT\elab\eLab 2016.07.11.001\WindowsApplication1" File="mdiLIMS.Designer.vb" Line="7">'mdiLIMS' contains field 'mdiLIMS.db' that is of IDisposable type: 'iLabDataContext'. Change the Dispose method on 'mdiLIMS' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>

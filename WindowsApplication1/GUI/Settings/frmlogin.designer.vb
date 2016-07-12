@@ -19,6 +19,7 @@ Partial Class frmlogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmlogin))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtpwd = New System.Windows.Forms.TextBox()
         Me.txtuser = New System.Windows.Forms.TextBox()
@@ -31,7 +32,7 @@ Partial Class frmlogin
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(444, 70)
+        Me.GroupBox1.Location = New System.Drawing.Point(536, 37)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(347, 84)
         Me.GroupBox1.TabIndex = 0
@@ -40,7 +41,7 @@ Partial Class frmlogin
         '
         'txtpwd
         '
-        Me.txtpwd.Location = New System.Drawing.Point(195, 94)
+        Me.txtpwd.Location = New System.Drawing.Point(192, 76)
         Me.txtpwd.Name = "txtpwd"
         Me.txtpwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtpwd.Size = New System.Drawing.Size(189, 20)
@@ -48,7 +49,7 @@ Partial Class frmlogin
         '
         'txtuser
         '
-        Me.txtuser.Location = New System.Drawing.Point(195, 70)
+        Me.txtuser.Location = New System.Drawing.Point(192, 50)
         Me.txtuser.Name = "txtuser"
         Me.txtuser.Size = New System.Drawing.Size(189, 20)
         Me.txtuser.TabIndex = 2
@@ -56,7 +57,7 @@ Partial Class frmlogin
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(130, 98)
+        Me.Label2.Location = New System.Drawing.Point(127, 80)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 16)
         Me.Label2.TabIndex = 1
@@ -65,7 +66,7 @@ Partial Class frmlogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(130, 70)
+        Me.Label1.Location = New System.Drawing.Point(127, 50)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 16)
         Me.Label1.TabIndex = 0
@@ -77,7 +78,7 @@ Partial Class frmlogin
         Me.cmdexit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.cmdexit.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdexit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.cmdexit.Location = New System.Drawing.Point(274, 147)
+        Me.cmdexit.Location = New System.Drawing.Point(238, 132)
         Me.cmdexit.Name = "cmdexit"
         Me.cmdexit.Size = New System.Drawing.Size(125, 39)
         Me.cmdexit.TabIndex = 2
@@ -90,7 +91,7 @@ Partial Class frmlogin
         Me.cmdlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.cmdlogin.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdlogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.cmdlogin.Location = New System.Drawing.Point(124, 147)
+        Me.cmdlogin.Location = New System.Drawing.Point(107, 132)
         Me.cmdlogin.Name = "cmdlogin"
         Me.cmdlogin.Size = New System.Drawing.Size(125, 39)
         Me.cmdlogin.TabIndex = 1
@@ -113,8 +114,9 @@ Partial Class frmlogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.CancelButton = Me.cmdexit
-        Me.ClientSize = New System.Drawing.Size(422, 201)
+        Me.ClientSize = New System.Drawing.Size(427, 191)
         Me.Controls.Add(Me.cmdexit)
         Me.Controls.Add(Me.txtpwd)
         Me.Controls.Add(Me.cmdlogin)

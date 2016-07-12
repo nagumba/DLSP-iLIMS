@@ -94,25 +94,39 @@ Public Class clsManageArchives
 
 
 
-    Public Sub populateShelves(ByVal frm As frmSamples)
-        Dim sql1 As String = "SELECT shelf_ID FROM [eLab].[dbo].[shelves] where FR_ID =  " & frm.cb_freezer.Text.Trim & " order by shelf_ID" 'load locations
-        frm.cb_shelf.DataSource = Nothing
-        loadCombo(frm.cb_shelf, sql1, "shelves", "shelf_ID")
-    End Sub
+    'Public Sub populateShelves(ByVal frm As frmSamples)
+    '    Dim sql1 As String = "SELECT shelf_ID FROM [eLab].[dbo].[shelves] where FR_ID =  " & frm.cb_freezer.Text.Trim & " order by shelf_ID" 'load locations
+    '    frm.cb_shelf.DataSource = Nothing
+    '    loadCombo(frm.cb_shelf, sql1, "shelves", "shelf_ID")
+    'End Sub
 
-    Public Sub populateBox(ByVal frm As frmSamples)
-        Dim sql1 As String = "Select boxid FROM [eLab].[dbo].[boxes] where rack_ID = '" & frm.cb_rack.Text.Trim & "' order by boxid" 'load locations
-        frm.cb_Box.DataSource = Nothing
-        loadCombo(frm.cb_Box, sql1, "boxes", "boxid")
-    End Sub
+    'Public Sub populateBox(ByVal frm As frmSamples)
+    '    Dim sql1 As String = "Select boxid FROM [eLab].[dbo].[boxes] where rack_ID = '" & frm.cb_rack.Text.Trim & "' order by boxid" 'load locations
+    '    frm.cb_Box.DataSource = Nothing
+    '    loadCombo(frm.cb_Box, sql1, "boxes", "boxid")
+    'End Sub
 
     Public Sub saveArchive(frm As frmAliquoting)
         Try
-            db.manage_archives(1, frm.txtBarcode.Text.Trim, frm.txtAliq1.Text.Trim, frm.cb_Box.Text.Trim, frm.nud_pos.Value, 1, Now.Date, Cuser, 1)
+            db.manage_archives(1, frm.txtBarcode.Text.Trim, frm.txtAliq1.Text.Trim, frm.cb_Box.Text.Trim, frm.nud_pos.Value, 1, Now.Date.ToShortDateString, Cuser, 1)
             msgSuccess("Saved successfully")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
     End Sub
 
+    Public Sub ClearControls(frm As frmAliquoting)
+        frm.txtAliq1.Clear()
+        frm.nudVol.Value = 0
+        frm.nud_pos.Value = 0
+        frm.txtAddressee.Clear()
+
+        frm.cb_freezer.Text = ""
+        frm.cb_shelf.Text = ""
+        frm.cb_rack.Text = ""
+        frm.cb_Box.Text = ""
+        frm.cb_destination.Text = ""
+        frm.cb_origin.Text = ""
+    End Sub
 End Class

@@ -41,9 +41,9 @@
     End Sub
     Private Sub btn_archive_Click(sender As Object, e As EventArgs) Handles btn_archive.Click
         objarchives.saveArchive(Me)
-        db.manage_aliquots(sLabref, sBarcode, txtAliq1.Text, cb_Box.Text.Trim, nud_pos.Value, "", "", Cuser, 4)
+        db.manage_aliquots(sLabref, sBarcode, txtAliq1.Text, cb_Box.Text.Trim, nud_pos.Value, "Active", nudVol.Value, Cuser, 4)
         objarchives.loadAliquots(Me)
-        txtAliq1.Clear()
+        objarchives.ClearControls(Me)
         grp_Shipping.Visible = False
         grpArchiving.Visible = False
     End Sub
@@ -57,13 +57,15 @@
         objarchives.fillbox(Me.cb_rack.Text.Trim.ToString, Me)
     End Sub
     Private Sub cmdGBox_Click(sender As Object, e As EventArgs) Handles cmdGBox.Click
-        BoxView.ShowDialog()
+        Dim frm As New BoxView
+        frm.MdiParent = mdiLIMS
+        frm.Show()
     End Sub
 
     Private Sub dgvAliquots_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAliquots.CellContentClick
 
 
-
+        nudVol.Value = Me.dgvAliquots.CurrentRow.Cells("AliquotVol").Value
         txtAliq1.Text = Me.dgvAliquots.CurrentRow.Cells("UniqueID").Value
         Dim sboxid As Integer = Me.dgvAliquots.CurrentRow.Cells("BoxID").Value
 
@@ -100,7 +102,7 @@
             db.manage_Shipping(0, sBarcode, txtAliq1.Text.Trim, cb_origin.Text.Trim, cb_destination.Text.Trim, dtpsenddate.Value, "1900-01-01", txtAddressee.Text.Trim, "", Cuser, "NO", "NO", 1)
             db.manage_aliquots(sLabref, sBarcode, txtAliq1.Text, "0", "0", "SHIPPED -" & cb_destination.Text.Trim, nudVol.Value, Cuser, 4)
             objarchives.loadAliquots(Me)
-            txtAliq1.Clear()
+            objarchives.ClearControls(Me)
             grpArchiving.Visible = False
             grp_Shipping.Visible = False
         Catch Err As Exception
@@ -123,6 +125,16 @@
             End If
         Else
             msgError("You must select an aliquot to delete")
+        End If
+    End Sub
+
+    Private Sub txtAliq1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAliq1.KeyPress
+        If e.KeyChar.IsLower(e.KeyChar) Then
+            ' Save current location
+            Dim pos As Integer = txtAliq1.SelectionStart
+            txtAliq1.Text = txtAliq1.Text & e.KeyChar.ToUpper(e.KeyChar)
+            txtAliq1.SelectionStart = pos + 1
+            e.Handled = True
         End If
     End Sub
 End Class

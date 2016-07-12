@@ -10,4 +10,20 @@ Public Class clsManageSearch
         FillMyGrid(frm.dgvRecords, sql)
     End Sub
 
+    Public Sub loadResultsQC(frm As frmSearch2)
+        '  Dim sql As String = ""
+        If frm.cbResult.Text.Trim = "PCR" Then
+            FillMyGrid(frm.dgvRecords, "Select * FROM PCR_Results")
+        ElseIf frm.cbResult.Text.Trim = "Elisa"
+            FillMyGrid(frm.dgvRecords, "Select * FROM ELISA_Results")
+        ElseIf frm.cbResult.Text.Trim = "Binax"
+            FillMyGrid(frm.dgvRecords, "Select * FROM Binax_Results")
+        ElseIf frm.cbResult.Text.Trim = "Culture"
+            FillMyGrid(frm.dgvRecords, "Select * FROM Culture_Results")
+        End If
+
+
+
+    End Sub
+
 End Class

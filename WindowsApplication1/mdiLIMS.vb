@@ -2,6 +2,7 @@
 
 Public Class mdiLIMS
     Dim db As New iLabDataContext
+    Public f As Button
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs) Handles NewToolStripMenuItem.Click, NewWindowToolStripMenuItem.Click
         ' Create a new instance of the child form.
         Dim ChildForm As New System.Windows.Forms.Form
@@ -87,9 +88,15 @@ Public Class mdiLIMS
     Private m_ChildFormNumber As Integer
 
     Private Sub MDIParent1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        tssUser.Text = "Nagumba"
-    End Sub
 
+        Cuser = "Noel Agumba"
+        tssUser.Text = Cuser
+
+
+    End Sub
+    Private Sub Dynamyc()
+        MsgBox(f.Name)
+    End Sub
     Private Sub ChangePasswordToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChangePasswordToolStripMenuItem.Click
 
         Dim frm As New frmmanagepassword
@@ -107,9 +114,6 @@ Public Class mdiLIMS
 
     Private Sub AddSampleTypesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddSampleTypesToolStripMenuItem.Click
 
-        'Dim frm As New Form1
-        'frm.MdiParent = Me
-        'frm.Show()
     End Sub
 
     Private Sub ManageUsersToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ManageUsersToolStripMenuItem.Click
@@ -136,12 +140,8 @@ Public Class mdiLIMS
         frm.Show()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        If MsgBox("Are you sure you want to exit elab?", vbYesNo) = MsgBoxResult.Yes Then
-            Application.Exit()
-        Else
-            Exit Sub
-        End If
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
     Private Sub ArchivingToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ArchivingToolStripMenuItem.Click
@@ -200,6 +200,64 @@ Public Class mdiLIMS
 
     Private Sub ShippedSamplesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShippedSamplesToolStripMenuItem.Click
         Dim frm As New frmShipping
+        frm.MdiParent = Me
+        frm.Show()
+    End Sub
+
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
+
+    End Sub
+
+    Private Sub GenerateBoxes(frm As BoxView)
+
+        Dim TableLayoutPanel As New TableLayoutPanel
+        TableLayoutPanel = TableLayoutPanel1
+        TableLayoutPanel.Name = "boxes"
+        TableLayoutPanel.Visible = False
+        Dim i As Integer
+        Dim l As Integer = 0
+        Dim abarcode As String = "Barcode"
+        Dim aUniqueID As String = "UniqueID"
+        Dim SAMTYPE As String = "Type"
+        For i = 0 To 80
+            TableLayoutPanel.Controls.Add(New Button)
+        Next
+        For Each f In TableLayoutPanel.Controls
+            f.BackColor = Color.LightBlue
+            l += 1
+            f.Text = l.ToString() & vbCrLf & abarcode & vbCrLf & aUniqueID & vbCrLf & SAMTYPE
+            f.Name = "Pos" & l.ToString
+            AddHandler f.Click, AddressOf clickMe
+            f.AutoSize = True
+        Next
+        TableLayoutPanel.Top = 0
+        TableLayoutPanel.Left = 0
+
+        TableLayoutPanel.Visible = True
+    End Sub
+    Private Sub clickMe(ByVal sender As Object, ByVal e As EventArgs)
+        Dim btn As Button
+        btn = CType(sender, Button)
+        Dim str As String = btn.Text
+        MessageBox.Show(str)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+        Dim f As Form
+        f = New frmSearch2
+        f.Show()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem1.Click
+        If MsgBox("Are you sure you want to exit elab?", vbYesNo) = MsgBoxResult.Yes Then
+            Application.Exit()
+        Else
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub QCToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QCToolStripMenuItem.Click
+        Dim frm As New frmSearch2
         frm.MdiParent = Me
         frm.Show()
     End Sub

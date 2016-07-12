@@ -184,18 +184,6 @@
     <Parameter Name="schema" Type="System.String" DbType="VarChar(100)" />
     <Return Type="object" />
   </Function>
-  <Function Name="dbo.manage_archives" Method="manage_archives">
-    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="BoxID" Parameter="boxID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Pos_Ref" Parameter="pos_Ref" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ArchiveState" Parameter="archiveState" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="ArchiveDate" Parameter="archiveDate" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="type" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.manage_Freezers" Method="manage_Freezers">
     <Parameter Name="FR_No" Parameter="fR_No" Type="System.Int32" DbType="Int" />
     <Parameter Name="FR_Location" Parameter="fR_Location" Type="System.String" DbType="NVarChar(20)" />
@@ -283,22 +271,6 @@
     <Parameter Name="type" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.manage_Sample_Results" Method="manage_Sample_Results">
-    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="Test" Parameter="test" Type="System.String" DbType="NVarChar(50)" />
-    <Parameter Name="Kit" Parameter="kit" Type="System.String" DbType="NChar(100)" />
-    <Parameter Name="Target" Parameter="target" Type="System.String" DbType="NChar(100)" />
-    <Parameter Name="Result" Parameter="result" Type="System.String" DbType="NVarChar(50)" />
-    <Parameter Name="QC_Officer" Parameter="qC_Officer" Type="System.String" DbType="NChar(30)" />
-    <Parameter Name="QCdate" Parameter="qCdate" Type="System.DateTime" DbType="Date" />
-    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="Measure" Parameter="measure" Type="System.Double" DbType="Float" />
-    <Parameter Name="status" Type="System.String" DbType="NChar(20)" />
-    <Parameter Name="type" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.manage_aliquots" Method="manage_aliquots">
     <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
     <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
@@ -324,6 +296,34 @@
     <Parameter Name="Send_officer" Parameter="send_officer" Type="System.String" DbType="NVarChar(20)" />
     <Parameter Name="_return" Type="System.String" DbType="NVarChar(20)" />
     <Parameter Name="_returnED" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_Sample_Results" Method="manage_Sample_Results">
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Test" Parameter="test" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Kit" Parameter="kit" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="Target" Parameter="target" Type="System.String" DbType="NChar(100)" />
+    <Parameter Name="Result" Parameter="result" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="QC_Officer" Parameter="qC_Officer" Type="System.String" DbType="NChar(30)" />
+    <Parameter Name="QCdate" Parameter="qCdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="Measure" Parameter="measure" Type="System.Double" DbType="Float" />
+    <Parameter Name="status" Type="System.String" DbType="NChar(20)" />
+    <Parameter Name="type" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.manage_archives" Method="manage_archives">
+    <Parameter Name="LabRef" Parameter="labRef" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Barcode" Parameter="barcode" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="UniqueID" Parameter="uniqueID" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="BoxID" Parameter="boxID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Pos_Ref" Parameter="pos_Ref" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ArchiveState" Parameter="archiveState" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="ArchiveDate" Parameter="archiveDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Officer" Parameter="officer" Type="System.String" DbType="NVarChar(20)" />
     <Parameter Name="type" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>

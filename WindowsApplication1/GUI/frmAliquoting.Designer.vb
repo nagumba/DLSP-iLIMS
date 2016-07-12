@@ -118,6 +118,9 @@ Partial Class frmAliquoting
         Me.dgvAliquots.AllowUserToAddRows = False
         Me.dgvAliquots.AllowUserToDeleteRows = False
         Me.dgvAliquots.AllowUserToOrderColumns = True
+        Me.dgvAliquots.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvAliquots.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAliquots.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
         Me.dgvAliquots.Location = New System.Drawing.Point(12, 95)

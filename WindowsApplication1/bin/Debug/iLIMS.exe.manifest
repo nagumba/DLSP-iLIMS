@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iLIMS.exe" size="438184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iLIMS.exe" size="567720">
       <assemblyIdentity name="iLIMS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rtT3TEq7rCuIm8A5SaTqQZ4nEs4=</dsig:DigestValue>
+        <dsig:DigestValue>2VWwJCYYCjcU0v+TKreXu+HXqZU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

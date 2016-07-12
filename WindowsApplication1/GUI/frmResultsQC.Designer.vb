@@ -83,7 +83,7 @@ Partial Class frmResultsQC
         '
         Me.cbUser.Enabled = False
         Me.cbUser.FormattingEnabled = True
-        Me.cbUser.Items.AddRange(New Object() {"CONTAINS", "=", "STARTS WITH", "END WITH"})
+        Me.cbUser.Items.AddRange(New Object() {"", "Culture", "PCR", "Elisa", "Binax", "Bactec", "Gramstain"})
         Me.cbUser.Location = New System.Drawing.Point(136, 144)
         Me.cbUser.Name = "cbUser"
         Me.cbUser.Size = New System.Drawing.Size(175, 21)
@@ -184,9 +184,9 @@ Partial Class frmResultsQC
         Me.chkUser.AutoSize = True
         Me.chkUser.Location = New System.Drawing.Point(12, 148)
         Me.chkUser.Name = "chkUser"
-        Me.chkUser.Size = New System.Drawing.Size(48, 17)
+        Me.chkUser.Size = New System.Drawing.Size(61, 17)
         Me.chkUser.TabIndex = 26
-        Me.chkUser.Text = "User"
+        Me.chkUser.Text = "Results"
         Me.chkUser.UseVisualStyleBackColor = True
         '
         'chkLocation
@@ -288,7 +288,8 @@ Partial Class frmResultsQC
         '
         Me.dgvRecords.AllowUserToAddRows = False
         Me.dgvRecords.AllowUserToDeleteRows = False
-        Me.dgvRecords.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.dgvRecords.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvRecords.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.dgvRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize

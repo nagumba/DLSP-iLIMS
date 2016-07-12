@@ -69,7 +69,7 @@ Public Class frmSamples
 
 
 
-    Private Sub cmdSave_Click(sender As Object, e As EventArgs) Handles cmdSave.Click
+    Private Sub cmdSave_Click(sender As Object, e As EventArgs)
 
         'objarchives.saveArchive(Me)
         'objarchives.loadArchives(Me)

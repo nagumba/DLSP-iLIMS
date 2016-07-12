@@ -22,28 +22,6 @@ Partial Class frmSamples
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.txtUniqueID = New System.Windows.Forms.TextBox()
-        Me.cb_rack = New System.Windows.Forms.ComboBox()
-        Me.cb_shelf = New System.Windows.Forms.ComboBox()
-        Me.lblStudy = New System.Windows.Forms.Label()
-        Me.lblGroup = New System.Windows.Forms.Label()
-        Me.lblBarcode = New System.Windows.Forms.Label()
-        Me.lblSampleType = New System.Windows.Forms.Label()
-        Me.cmdGBox = New System.Windows.Forms.Button()
-        Me.nud_pos = New System.Windows.Forms.NumericUpDown()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.cmdSave = New System.Windows.Forms.Button()
-        Me.cmdGetNew = New System.Windows.Forms.Button()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.dgvArchives = New System.Windows.Forms.DataGridView()
-        Me.cb_Box = New System.Windows.Forms.ComboBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.cb_freezer = New System.Windows.Forms.ComboBox()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.cb = New System.Windows.Forms.ComboBox()
@@ -86,11 +64,7 @@ Partial Class frmSamples
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.dgvSamples = New System.Windows.Forms.DataGridView()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.nud_pos, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvArchives, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tc_ReceiveSamples = New System.Windows.Forms.TabControl()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -98,230 +72,8 @@ Partial Class frmSamples
         Me.grpDemo.SuspendLayout()
         CType(Me.nud_P_Age, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvSamples, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabControl1.SuspendLayout()
+        Me.tc_ReceiveSamples.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.txtUniqueID)
-        Me.TabPage2.Controls.Add(Me.cb_rack)
-        Me.TabPage2.Controls.Add(Me.cb_shelf)
-        Me.TabPage2.Controls.Add(Me.lblStudy)
-        Me.TabPage2.Controls.Add(Me.lblGroup)
-        Me.TabPage2.Controls.Add(Me.lblBarcode)
-        Me.TabPage2.Controls.Add(Me.lblSampleType)
-        Me.TabPage2.Controls.Add(Me.cmdGBox)
-        Me.TabPage2.Controls.Add(Me.nud_pos)
-        Me.TabPage2.Controls.Add(Me.Label20)
-        Me.TabPage2.Controls.Add(Me.cmdSave)
-        Me.TabPage2.Controls.Add(Me.cmdGetNew)
-        Me.TabPage2.Controls.Add(Me.Label21)
-        Me.TabPage2.Controls.Add(Me.dgvArchives)
-        Me.TabPage2.Controls.Add(Me.cb_Box)
-        Me.TabPage2.Controls.Add(Me.Label22)
-        Me.TabPage2.Controls.Add(Me.Label23)
-        Me.TabPage2.Controls.Add(Me.Label24)
-        Me.TabPage2.Controls.Add(Me.Label25)
-        Me.TabPage2.Controls.Add(Me.cb_freezer)
-        Me.TabPage2.Controls.Add(Me.Label26)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1054, 564)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Archiving"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'txtUniqueID
-        '
-        Me.txtUniqueID.Location = New System.Drawing.Point(216, 13)
-        Me.txtUniqueID.Name = "txtUniqueID"
-        Me.txtUniqueID.Size = New System.Drawing.Size(123, 20)
-        Me.txtUniqueID.TabIndex = 70
-        '
-        'cb_rack
-        '
-        Me.cb_rack.FormattingEnabled = True
-        Me.cb_rack.Location = New System.Drawing.Point(393, 63)
-        Me.cb_rack.Name = "cb_rack"
-        Me.cb_rack.Size = New System.Drawing.Size(121, 21)
-        Me.cb_rack.TabIndex = 69
-        '
-        'cb_shelf
-        '
-        Me.cb_shelf.FormattingEnabled = True
-        Me.cb_shelf.Location = New System.Drawing.Point(253, 61)
-        Me.cb_shelf.Name = "cb_shelf"
-        Me.cb_shelf.Size = New System.Drawing.Size(94, 21)
-        Me.cb_shelf.TabIndex = 68
-        '
-        'lblStudy
-        '
-        Me.lblStudy.AutoSize = True
-        Me.lblStudy.Location = New System.Drawing.Point(692, 16)
-        Me.lblStudy.Name = "lblStudy"
-        Me.lblStudy.Size = New System.Drawing.Size(45, 13)
-        Me.lblStudy.TabIndex = 66
-        Me.lblStudy.Text = "Label11"
-        '
-        'lblGroup
-        '
-        Me.lblGroup.AutoSize = True
-        Me.lblGroup.Location = New System.Drawing.Point(589, 16)
-        Me.lblGroup.Name = "lblGroup"
-        Me.lblGroup.Size = New System.Drawing.Size(45, 13)
-        Me.lblGroup.TabIndex = 65
-        Me.lblGroup.Text = "Label17"
-        '
-        'lblBarcode
-        '
-        Me.lblBarcode.AutoSize = True
-        Me.lblBarcode.Location = New System.Drawing.Point(461, 16)
-        Me.lblBarcode.Name = "lblBarcode"
-        Me.lblBarcode.Size = New System.Drawing.Size(57, 13)
-        Me.lblBarcode.TabIndex = 64
-        Me.lblBarcode.Text = "lblBarcode"
-        '
-        'lblSampleType
-        '
-        Me.lblSampleType.AutoSize = True
-        Me.lblSampleType.Location = New System.Drawing.Point(345, 16)
-        Me.lblSampleType.Name = "lblSampleType"
-        Me.lblSampleType.Size = New System.Drawing.Size(41, 13)
-        Me.lblSampleType.TabIndex = 63
-        Me.lblSampleType.Text = "lblType"
-        '
-        'cmdGBox
-        '
-        Me.cmdGBox.Location = New System.Drawing.Point(16, 399)
-        Me.cmdGBox.Name = "cmdGBox"
-        Me.cmdGBox.Size = New System.Drawing.Size(186, 30)
-        Me.cmdGBox.TabIndex = 62
-        Me.cmdGBox.Text = "View Box graphically"
-        Me.cmdGBox.UseVisualStyleBackColor = True
-        '
-        'nud_pos
-        '
-        Me.nud_pos.Location = New System.Drawing.Point(715, 64)
-        Me.nud_pos.Maximum = New Decimal(New Integer() {81, 0, 0, 0})
-        Me.nud_pos.Name = "nud_pos"
-        Me.nud_pos.Size = New System.Drawing.Size(36, 20)
-        Me.nud_pos.TabIndex = 61
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(665, 67)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(44, 13)
-        Me.Label20.TabIndex = 60
-        Me.Label20.Text = "Position"
-        '
-        'cmdSave
-        '
-        Me.cmdSave.Location = New System.Drawing.Point(216, 405)
-        Me.cmdSave.Name = "cmdSave"
-        Me.cmdSave.Size = New System.Drawing.Size(184, 24)
-        Me.cmdSave.TabIndex = 59
-        Me.cmdSave.Text = "Save the archive"
-        Me.cmdSave.UseVisualStyleBackColor = True
-        '
-        'cmdGetNew
-        '
-        Me.cmdGetNew.Location = New System.Drawing.Point(406, 408)
-        Me.cmdGetNew.Name = "cmdGetNew"
-        Me.cmdGetNew.Size = New System.Drawing.Size(184, 21)
-        Me.cmdGetNew.TabIndex = 58
-        Me.cmdGetNew.Text = "Get Next free position"
-        Me.cmdGetNew.UseVisualStyleBackColor = True
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(255, 41)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(293, 13)
-        Me.Label21.TabIndex = 57
-        Me.Label21.Text = "View All archiving position for this sample's aliquot"
-        '
-        'dgvArchives
-        '
-        Me.dgvArchives.AllowUserToAddRows = False
-        Me.dgvArchives.AllowUserToDeleteRows = False
-        Me.dgvArchives.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvArchives.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dgvArchives.Location = New System.Drawing.Point(21, 152)
-        Me.dgvArchives.MultiSelect = False
-        Me.dgvArchives.Name = "dgvArchives"
-        Me.dgvArchives.ReadOnly = True
-        Me.dgvArchives.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvArchives.Size = New System.Drawing.Size(830, 228)
-        Me.dgvArchives.TabIndex = 56
-        '
-        'cb_Box
-        '
-        Me.cb_Box.FormattingEnabled = True
-        Me.cb_Box.Location = New System.Drawing.Point(585, 64)
-        Me.cb_Box.MaxDropDownItems = 100
-        Me.cb_Box.Name = "cb_Box"
-        Me.cb_Box.Size = New System.Drawing.Size(62, 21)
-        Me.cb_Box.TabIndex = 55
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(554, 68)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(25, 13)
-        Me.Label22.TabIndex = 54
-        Me.Label22.Text = "Box"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(353, 68)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(33, 13)
-        Me.Label23.TabIndex = 51
-        Me.Label23.Text = "Rack"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(216, 68)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(31, 13)
-        Me.Label24.TabIndex = 50
-        Me.Label24.Text = "Shelf"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(20, 67)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(42, 13)
-        Me.Label25.TabIndex = 49
-        Me.Label25.Text = "Freezer"
-        '
-        'cb_freezer
-        '
-        Me.cb_freezer.FormattingEnabled = True
-        Me.cb_freezer.Items.AddRange(New Object() {"1", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "2", "20", "21", "22", "23", "24", "3", "4", "5", "6", "7", "8", "9"})
-        Me.cb_freezer.Location = New System.Drawing.Point(68, 64)
-        Me.cb_freezer.MaxDropDownItems = 100
-        Me.cb_freezer.Name = "cb_freezer"
-        Me.cb_freezer.Size = New System.Drawing.Size(142, 21)
-        Me.cb_freezer.TabIndex = 48
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(18, 16)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(192, 13)
-        Me.Label26.TabIndex = 46
-        Me.Label26.Text = "Type/Scan in the Unique ID to Archive"
         '
         'TabPage1
         '
@@ -761,26 +513,14 @@ Partial Class frmSamples
         Me.dgvSamples.Size = New System.Drawing.Size(630, 251)
         Me.dgvSamples.TabIndex = 37
         '
-        'TabControl1
+        'tc_ReceiveSamples
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 8)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1062, 590)
-        Me.TabControl1.TabIndex = 67
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1054, 564)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "TabPage3"
-        Me.TabPage3.UseVisualStyleBackColor = True
+        Me.tc_ReceiveSamples.Controls.Add(Me.TabPage1)
+        Me.tc_ReceiveSamples.Location = New System.Drawing.Point(12, 8)
+        Me.tc_ReceiveSamples.Name = "tc_ReceiveSamples"
+        Me.tc_ReceiveSamples.SelectedIndex = 0
+        Me.tc_ReceiveSamples.Size = New System.Drawing.Size(1062, 590)
+        Me.tc_ReceiveSamples.TabIndex = 67
         '
         'frmSamples
         '
@@ -788,16 +528,12 @@ Partial Class frmSamples
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1354, 703)
         Me.ControlBox = False
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.tc_ReceiveSamples)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmSamples"
         Me.Text = "Receive Samples"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
-        CType(Me.nud_pos, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvArchives, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
@@ -810,12 +546,12 @@ Partial Class frmSamples
         Me.grpDemo.PerformLayout()
         CType(Me.nud_P_Age, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvSamples, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabControl1.ResumeLayout(False)
+        Me.tc_ReceiveSamples.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents tc_ReceiveSamples As TabControl
     Friend WithEvents dgvSamples As DataGridView
     Friend WithEvents txtName As TextBox
     Friend WithEvents Label6 As Label
@@ -854,31 +590,8 @@ Partial Class frmSamples
     Friend WithEvents cb As ComboBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents Label26 As Label
-    Friend WithEvents cb_freezer As ComboBox
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents cb_Box As ComboBox
-    Friend WithEvents dgvArchives As DataGridView
-    Friend WithEvents Label21 As Label
-    Friend WithEvents cmdGetNew As Button
-    Friend WithEvents cmdSave As Button
-    Friend WithEvents Label20 As Label
-    Friend WithEvents nud_pos As NumericUpDown
-    Friend WithEvents cmdGBox As Button
-    Friend WithEvents lblSampleType As Label
-    Friend WithEvents lblBarcode As Label
-    Friend WithEvents lblGroup As Label
-    Friend WithEvents lblStudy As Label
-    Friend WithEvents TabPage2 As TabPage
     Friend WithEvents txtBactec As TextBox
     Friend WithEvents lblBactec As Label
-    Friend WithEvents cb_shelf As ComboBox
-    Friend WithEvents cb_rack As ComboBox
-    Friend WithEvents txtUniqueID As TextBox
     Friend WithEvents cb_study As ComboBox
     Friend WithEvents Button4 As Button
-    Friend WithEvents TabPage3 As TabPage
 End Class
